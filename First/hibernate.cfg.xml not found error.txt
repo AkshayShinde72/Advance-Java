@@ -1,0 +1,1 @@
+while running the application if you get hibernate.cfg.xml not found error, delete this file from "src" folder and copy it again , run the application.
