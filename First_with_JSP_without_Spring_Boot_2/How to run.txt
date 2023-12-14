@@ -1,0 +1,4 @@
+right click on "project name"
+	run as run on server
+
+http://localhost:8080/<your project name>/book
