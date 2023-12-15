@@ -1,0 +1,14 @@
+@SpringBootApplication should be applied to that class which is going to start the server and deploy your web application.
+
+Spring Boot @SpringBootApplication annotation is used to mark a configuration class that declares one or more @Bean methods and also triggers auto-configuration and component scanning. It's same as declaring a class with @Configuration, @EnableAutoConfiguration and @ComponentScan annotations.
+
+i.e
+
+SpringBootApplication=Configuration+EnableAutoConfiguration+ComponentScan
+
+
+
+
+@Configuration : This annotation indicates that the class is a configuration class and can contain Spring bean definitions. It is used to define and configure beans that are managed by the Spring framework. 
+
+@EnableAutoConfiguration : This annotation enables automatic configuration of the Spring Boot application.
