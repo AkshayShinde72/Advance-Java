@@ -1,0 +1,7 @@
+inside "src/main/java"
+
+create 3 packages
+
+com.example.entities
+com.example.controllers
+com.example.repositories
