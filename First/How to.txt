@@ -2,74 +2,64 @@ File
 	new
 		Spring starter project
 
-give a name to the project "MVC"
+	Stud_Add
 
-make sure Type is "Maven" and "Java version is 17"
+maven			jar
+17			java
+
 
 next
 
-make sure spring boot version is "3.0.8 snapshot"
+dependencies
 
-new spring starter project dependencies
-
-	choose
-
-		Spring Web
-		Thymeleaf
+Spring Web
+Spring Boot Dev Tools
+Spring Data JPA
+MySQL Driver
 
 next
-	finish
 
-
-once the project gets created,
-
-copy "Book.java" and "BookNewController.java" in the same package where "DemoApplication.java" has been created.
-
-
-since we don't maintain "spring bean configuration file" inside spring boot, "View Resolver" settings we have to write inside "application.properties" file as follows:
-
-spring.mvc.view.prefix="/"
-spring.mvc.view.suffix=".html"   or ".jsp"
-
-html 
-	in case if our view is "thymeleaf"
-
-jsp
-	in case our view is "JSP"
-
-both ".html" or ".jsp" file needs to be there inside 
-	"src/main/resources/templates" folder.
-
-since we have "html(thymeleaf)" as a view, following entries should be there inside "application.properties" file:
-
-in case of Spring boot application, 
-	"application.properties" file gets created inside
-	"src/main/resources" folder
-
-
-spring.mvc.view.prefix="/"
-spring.mvc.view.suffix=".html"
-
-
-save "application.properties" file.
-
-
-copy "success.html" and "bookNew.html" inside  "src/main/resources/templates"  folder.
+finish
 
 
 
-go to "@SpringBootApplication" java class
-	run as
-		java application
+POST
 
-make sure server starts successfully
+	http://localhost:8080/addStudent
 
-go to browser and type
+body       raw            JSON
 
-http://localhost:8080/book
+type
 
-and make sure application works properly.
 
+{
+  "name":"sachin",
+  "age":25,
+  "address":
+  {
+    "cityname":"mumbai",
+    "statename":"Maharashtra"
+   }
+}
+
+          
+click on "send"
+
+make sure data goes inside "student" and "address" tables.
+
+
+
+GET
+	http://localhost:8080/getAllStudents
+
+click on "send"
+
+
+
+GET
+	http://localhost:8080/getNameState
+
+click on "send"
 
 
 
